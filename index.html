@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snehal's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="home">
+            <h1>Snehal's Portfolio</h1>
+            <p>Aspiring Java Developer </p>
+            <a href="Resume.pdf" download><button>Download Resume</button></a>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am a final year engineering student specializing in Java Development with a strong interest in AWS DevOps. Passionate about deep learning and medical imaging.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>ReactJS</li>
+                <li>AWS DevOps</li>
+                <li>Figma</li>
+                
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Brain Tumor Detection using CNN</li>
+                <li>Prostate Cancer Lesion Segmentation using U-Net</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your-email@example.com">snehalshirsath03@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">https://www.linkedin.com/in/snehal-shirsath-2254b528a?</a></p>
+            <p>GitHub: <a href="https://github.com/your-github-profile" target="_blank">https://github.com/snehalshirsath03</a></p>
+        </section>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        section {
+            padding: 60px 0;
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-left: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p, ul {
+            color: #666;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        ScrollReveal().reveal('.home', { duration: 1000, origin: 'top', distance: '50px' });
+        ScrollReveal().reveal('.about', { duration: 1000, origin: 'left', distance: '50px', delay: 200 });
+        ScrollReveal().reveal('.skills', { duration: 1000, origin: 'right', distance: '50px', delay: 400 });
+        ScrollReveal().reveal('.projects', { duration: 1000, origin: 'left', distance: '50px', delay: 600 });
+        ScrollReveal().reveal('.contact', { duration: 1000, origin: 'right', distance: '50px', delay: 800 });
+    </script>
+
+</body>
+</html>
